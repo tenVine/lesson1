@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { SuccessComponent } from './success/success.component';
 import { WarningComponent } from './warning/warning.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SuccessModule } from './success/success.module';
+import { WarningModule } from './warning/warning.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SuccessModule,
+    WarningModule
   ],
   providers: [],
   bootstrap: [AppComponent]
