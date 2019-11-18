@@ -8,9 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-app';
   switch: boolean = true;
+  text: string = 'Hide';
 
   showHide() {
     this.switch = !this.switch;
+    this.switch ? this.text = 'Hide' : this.text = 'Show';
   }
   
 }
