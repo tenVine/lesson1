@@ -1,2 +1,3 @@
 <app-success></app-success>
-<app-warning></app-warning>
+<button (click)='showHide()'>{{ switch ? 'Hide' : 'Show' }}</button>
+<app-warning *ngIf='switch'></app-warning>
